@@ -245,7 +245,7 @@ class FirefoxRuntime(DesktopRuntime):
         
         # Set size and position
         # Maybe interesting window features: alwaysRaised
-        windowfeatures = 'resizable=1,minimizable=1,dialog=0,'
+        windowfeatures = 'resizable=0,minimizable=1,dialog=0,'
         if self._windowmode == 'normal':
             windowfeatures += 'width=%i,height=%i' % self._size
             if self._pos:
